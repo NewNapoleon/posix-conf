@@ -1,6 +1,6 @@
 [user]
-	name = Philip Ye
-	email = phye@tencent.com
+	name = Napolenchen
+	email = napolenchen@tencent.com
 [core]
 	editor = vim
 [push]
@@ -9,5 +9,22 @@
 	discard = "checkout --"
 	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
 	discardall = !git status | egrep '(modified|deleted)' | cut -d : -f 2| xargs git discard
+	d = difftool
 [credential]
-	helper = cache
+[credential]
+[http]
+	sslverify = false
+[https]
+[http "http://git.code.oa.com"]
+[http "https://git.code.oa.com"]
+[url "git@git.code.oa.com:"]
+	insteadOf = https://git.code.oa.com/
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

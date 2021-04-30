@@ -1,6 +1,7 @@
 #!/bin/bash
 # Exit on any error!
 set -e
+shopt -s expand_aliases
 
 # TODO(phye): replace ROOT_DIR dynamically
 GITDIR=$(pwd)

@@ -83,3 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f ~/.zshrc.phye.sh ] && source ~/.zshrc.phye.sh
+export PATH="$PATH:$HOME/.ft"
+export PATH=/usr/local/clang/bin:$PATH
